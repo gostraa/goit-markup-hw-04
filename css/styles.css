@@ -450,7 +450,7 @@ background-color:var(--accent-two);
 
 }
 
-.person-media-link:hover .person-media-link:focus{
+.person-media-link:hover , .person-media-link:focus{
    background-color: var(--accent-two) 
 }
 
