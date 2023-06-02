@@ -451,7 +451,8 @@ background-color:var(--accent-two);
 }
 
 .person-media-link:hover , .person-media-link:focus{
-   background-color: var(--accent-two) 
+   background-color: var(--accent-two) ;
+   
 }
 
 .person-media-list{
@@ -496,10 +497,8 @@ padding: 0px 16px 32px 16px;
 
 /* CUSTOMERS SECTION 5 */
 .customers-tittle{
-   
-   
-   margin-bottom: 72px;
 
+   margin-bottom: 72px;
 
    text-align: center;
    font-family: 'Roboto' sans-serif;
@@ -508,24 +507,18 @@ padding: 0px 16px 32px 16px;
    letter-spacing: 0.02em;
    line-height: 1.11 ;
 
-
    color: var(--primary-text-color);
-
 }
 
 .customers-list {
     display: flex;
     gap: 24px;
-    
 }
 
 .custom-card{
-    
     height: 88px;
     width: calc((100% - 120px) / 6);
-    
 }
-
 
 
 .customers-link{
@@ -538,7 +531,6 @@ padding: 0px 16px 32px 16px;
     justify-content: center;
     color: var(--border-for-icons);
     cursor: pointer;
-
 }
 
 .custom-icon{
@@ -549,19 +541,12 @@ padding: 0px 16px 32px 16px;
 
 }
 
-.customers-link:hover{
-    border-color: var(--accent-two);
+
+
+.customers-link:hover, .customers-link:focus {
     color: var(--accent-two);
+    border: 1px solid var(--accent-two);
 }
-
-.customers-link:focus{
-    border-color: var(--accent-two);
-    color: var(--accent-two);
-}
-
-
-
-
 
 
     /* footer */ /* footer */ /* footer */
@@ -715,18 +700,13 @@ min-width: 69px;
 
 }
 
-.project-card-link:hover{
-    cursor: pointer;
+.project-card-link:hover, .project-card-link:focus{
+    
  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16),
    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.project-card-link:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-     0px 1px 1px rgba(46, 47, 66, 0.16),
-     0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 
 .button:hover,.button:focus{
