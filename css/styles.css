@@ -11,6 +11,7 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color:#2E2F42;
     --third-bg-color : #F4F4FD;
+    --border-for-icons : #8E8F99 ;
     --accent:#4D5AE5;
     --accent-two:#404bbf;
     --button-shadow-color:rgba(0, 0, 0, 0.15);
@@ -218,13 +219,25 @@ header{
 /* MAIN CONTENT */
 
 /* SECTION 1 */
-.hero{
+
+.hero {
+
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
     background-color: var(--secondary-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+
     text-align: center;
     padding: 188px 0;
-
-    
 }
+
+
 
 .hero-tittle{
     max-width: 496px;
@@ -267,7 +280,7 @@ background-color:var(--accent-two);
 
 /* SECTION 2 */
 
- .feauters-list{
+ .feauters-list {
     display: flex;
  }
 
@@ -280,6 +293,24 @@ background-color:var(--accent-two);
     margin-right:0px;
  }
 
+
+ .feauters-icon {
+
+    width: 264px;
+    height: 112px;
+    background-color: var(--third-bg-color);
+ }
+
+ 
+
+ .feauters-svg{
+    margin: 24px 100px;
+    width: 64px;
+    height: 64px;
+ }
+
+
+
 .feauters-card-tittle{
     color: var(--primary-text-color);
     font-weight: 500;
@@ -287,6 +318,7 @@ background-color:var(--accent-two);
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .feauters-card-text{
@@ -367,7 +399,7 @@ background-color:var(--accent-two);
 
 .worker{
 
-    padding: 32px 16px;
+    padding: 32px 16px 8px 16px;
 }
 
 
@@ -394,15 +426,106 @@ background-color:var(--accent-two);
    
 }
 
+person-media-link{
+    display: block;
+}
+
+.person-media-list{
+
+display: flex;
+padding: 0px 16px 32px 16px;
+
+
+
+}
+
+
+.person-media-list .media-container:last-child{
+    margin-right: 0 ;
+}
+
+
+
+.media-container{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 24px ;
+    background-color: var(--accent);
+    border-radius: 50%;
+    
+}
+
+
+.person-media-icon{
+   
+   width: 16px;
+   height: 16px;
+   margin:12px;
+    
+}
+
+
+
+/* CUSTOMERS SECTION 5 */
+.customers-tittle{
+   
+   margin-top: 120px ;
+   margin-bottom: 72px;
+
+
+   text-align: center;
+   font-family: 'Roboto' sans-serif;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 40px;
+   letter-spacing: 0.02em;
+}
+
+.customers-list {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.custom-card{
+    width: auto;
+    height: 88px;
+    margin-right: 24px;
+    border: 1px solid var(--border-for-icons);
+    border-radius: 4px;
+    
+}
+.custom-card:last-child{
+    margin-right: 0;
+}
+
+
+
+.custom-icon{
+    
+    margin: 16px 32px;
+    width: 104px;
+     height: 56px;
+
+
+
+}
 
     /* footer */ /* footer */ /* footer */
 
 
 
 .footer{
+    
     background-color: var(--secondary-bg-color);
     padding-top: 100px;
     padding-bottom: 100px;
+    
+}
+.footer-container{
+    display: flex;
+    max-width: 1440px;
+    margin-left:auto;
+    margin-right: auto;
     
 }
 
@@ -424,12 +547,58 @@ color:var(--third-bg-color);
 
 }
 
-.footer-text{
+.footer-logo-text{
+    margin-left: 158px;
+}
+
+.footer-text {
     width: 264px;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em ;
    color:var(--third-bg-color);
+}
+
+.footer-media-tittle {
+ font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+
+color: var(--third-bg-color);
+
+margin-bottom: 16px ;
+}
+
+
+.footer-social {
+    margin-left: 120px;
+}
+
+.footer-media-list {
+    display:flex;
+   
+}
+
+.footer-media-item:last-child {
+    margin-right: 0;
+}
+
+.footer-media-item{
+    width: 40px;
+    height: 40px;
+     margin-right: 16px;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+
+.footer-media-icon {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
 }
 
 
@@ -515,6 +684,11 @@ min-width: 69px;
    
 }
 
+.project-card-content:hover {
+ cursor: pointer;
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 
 .project-tittle{
