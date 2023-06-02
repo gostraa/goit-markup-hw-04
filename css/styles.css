@@ -14,6 +14,7 @@
     --border-for-icons : #8E8F99 ;
     --accent:#4D5AE5;
     --accent-two:#404bbf;
+    --accent-color-social : #31d0aa ;
     --button-shadow-color:rgba(0, 0, 0, 0.15);
     --elements-border-color: #E7E9FC;
     --active-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -49,6 +50,7 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .link{
@@ -403,10 +405,10 @@ background-color:var(--accent-two);
     margin-right: 0;
 }
 
-.worker{
+/* .worker{
 
     padding: 32px 16px 8px 16px;
-}
+} */
 
 
 .card-tittle{
@@ -433,7 +435,11 @@ background-color:var(--accent-two);
    
 }
 
-person-media-link{
+
+.team-photo{
+    display: block;
+}
+.person-media-link{
     display: flex;
     width: 100%;
      height: 100% ;
@@ -451,6 +457,8 @@ person-media-link{
 .person-media-list{
 
 display: flex;
+justify-content: center;
+gap: 24px;
 margin-top: 8px;
 padding: 0px 16px 32px 16px;
 
@@ -468,7 +476,7 @@ padding: 0px 16px 32px 16px;
 .media-container{
     width: 40px;
     height: 40px;
-    margin-right: 24px ;
+    
     background-color: var(--accent);
     border-radius: 50%;
     
@@ -489,7 +497,7 @@ padding: 0px 16px 32px 16px;
 /* CUSTOMERS SECTION 5 */
 .customers-tittle{
    
-   margin-top: 120px ;
+   
    margin-bottom: 72px;
 
 
@@ -497,37 +505,60 @@ padding: 0px 16px 32px 16px;
    font-family: 'Roboto' sans-serif;
    font-weight: 700;
    font-size: 36px;
-   line-height: 40px;
    letter-spacing: 0.02em;
+   line-height: 1.11 ;
+
+
+   color: var(--primary-text-color);
+
 }
 
 .customers-list {
     display: flex;
-    margin-bottom: 120px;
+    gap: 24px;
+    
 }
 
 .custom-card{
-    width: auto;
+    
     height: 88px;
-    margin-right: 24px;
-    border: 1px solid var(--border-for-icons);
-    border-radius: 4px;
+    
+    
+
+    width: calc((100% - 120px) / 6);
     
 }
-.custom-card:last-child{
-    margin-right: 0;
-}
+
 
 
 
 .custom-icon{
-    
+    fill: currentColor;
     margin: 16px 32px;
     width: 104px;
      height: 56px;
 
 
 
+}
+
+
+.customers-link{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-for-icons);
+    border-radius: 4px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: var(--border-for-icons);
+    cursor: pointer;
+
+}
+
+.customers-link:hover , .customers-link:focus{
+    border-color: var(--accent-two);
+    color: var(--accent-two);
 }
 
     /* footer */ /* footer */ /* footer */
@@ -546,6 +577,7 @@ padding: 0px 16px 32px 16px;
     max-width: 1440px;
     margin-left:auto;
     margin-right: auto;
+    align-items: baseline
     
 }
 
@@ -569,6 +601,7 @@ color:var(--third-bg-color);
 
 .footer-logo-text{
     margin-left: 158px;
+    margin-right: 120px
 }
 
 .footer-text {
@@ -584,10 +617,10 @@ color:var(--third-bg-color);
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
 letter-spacing: 0.02em;
 
-color: var(--third-bg-color);
+color:  var(--primary-bg-color);
 
 margin-bottom: 16px ;
 }
@@ -599,25 +632,33 @@ margin-bottom: 16px ;
 
 .footer-media-list {
     display:flex;
+     gap: 16px;
    
 }
 
-.footer-media-item:last-child {
-    margin-right: 0;
-}
-
-.footer-media-item{
-    width: 40px;
-    height: 40px;
-     margin-right: 16px;
+.footer-media-link{
+    display: flex; 
+    align-items: center;
+     justify-content: center;
+    width: 100%;
+    height: 100%;
     background-color: var(--accent);
     border-radius: 50%;
 }
 
 
+.footer-media-link:hover , .footer-media-link:focus{
+      background-color: var( --accent-color-social);
+}
+
+.footer-media-item{
+    width: 40px;
+    height: 40px;
+}
+
+
 .footer-media-icon {
-    width: 24px;
-    height: 24px;
+   fill: var(--third-bg-color);
     margin: 8px;
 }
 
@@ -666,6 +707,16 @@ min-width: 69px;
     margin-right: 0px;
 }
 
+.project-card-link{
+    display: block;
+
+}
+
+.project-card-link:hover , .project-card-link:focus{
+    cursor: pointer;
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 
 
@@ -704,11 +755,7 @@ min-width: 69px;
    
 }
 
-.project-card-content:hover {
- cursor: pointer;
- box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 
 .project-tittle{
