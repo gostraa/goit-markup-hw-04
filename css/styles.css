@@ -522,25 +522,10 @@ padding: 0px 16px 32px 16px;
 .custom-card{
     
     height: 88px;
-    
-    
-
     width: calc((100% - 120px) / 6);
     
 }
 
-
-
-
-/* .custom-icon{
-    fill: currentColor;
-    margin: 16px 32px;
-    width: 104px;
-     height: 56px;
-
-
-
-} */
 
 
 .customers-link{
@@ -556,6 +541,14 @@ padding: 0px 16px 32px 16px;
 
 }
 
+.custom-icon{
+    fill: currentColor;
+    margin: 16px 32px;
+    width: 104px;
+     height: 56px;
+
+}
+
 .customers-link:hover{
     border-color: var(--accent-two);
     color: var(--accent-two);
@@ -567,15 +560,7 @@ padding: 0px 16px 32px 16px;
 }
 
 
-.custom-icon{
-    fill: currentColor;
-    margin: 16px 32px;
-    width: 104px;
-     height: 56px;
 
-
-
-}
 
 
 
@@ -618,7 +603,7 @@ color:var(--third-bg-color);
 }
 
 .footer-logo-text{
-    margin-left: 158px;
+    /* margin-left: 158px; */
     margin-right: 120px;
 }
 
@@ -733,11 +718,14 @@ min-width: 69px;
 .project-card-link:hover{
     cursor: pointer;
  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-link:focus{
-     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
