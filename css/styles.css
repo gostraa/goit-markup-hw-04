@@ -311,7 +311,6 @@ background-color:var(--accent-two);
  
 
  .feauters-svg{
-    margin: 24px 100px;
     width: 64px;
     height: 64px;
  }
@@ -562,9 +561,6 @@ padding: 0px 16px 32px 16px;
 }
 .footer-container{
     display: flex;
-    max-width: 1440px;
-    margin-left:auto;
-    margin-right: auto;
     align-items: baseline
     
 }
@@ -588,7 +584,7 @@ color:var(--third-bg-color);
 }
 
 .footer-logo-text{
-    /* margin-left: 158px; */
+  
     margin-right: 120px;
 }
 
@@ -613,10 +609,6 @@ color:  var(--primary-bg-color);
 margin-bottom: 16px ;
 }
 
-
-.footer-social {
-    margin-left: 120px;
-}
 
 .footer-media-list {
     display:flex;
